@@ -1,0 +1,39 @@
+﻿<!DOCTYPE html>
+<html ng-app="labb3Bootstrap">
+<head>
+    <title>Labb3 Bootstrap</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<meta charset="utf-8" />
+    <base href="/" />
+    <link href="CSS/master.css" rel="stylesheet" />
+</head>
+<body ng-controller="MainController">
+    <header ng-include="'Views/Partials/Navbar.html'"></header>
+
+    <!-- Bootstrap container fluid-->
+    <main class="container-fluid" ng-view></main>
+
+    <!-- 3rd party libs and framwork-->
+    <script src="Scripts/jquery-3.1.0.min.js"></script>
+    <script src="Scripts/bootstrap.js"></script>
+    <script src="Scripts/angular.js"></script>
+    <script src="Scripts/angular-route.js"></script>
+    
+    <!-- Misc-->
+
+    <!-- Modules-->
+    <script src="Scripts/Modules/Module.js"></script>
+
+    <!-- Routes-->
+    <script src="Scripts/Routes/Route.js"></script>
+
+    <!-- Controllers-->
+    <script src="Scripts/Controllers/home.controller.js"></script>
+    <script src="Scripts/Controllers/main.controller.js"></script>
+    <script src="Scripts/Controllers/products.controller.js"></script>
+    <script src="Scripts/Controllers/about.controller.js"></script>
+
+
+
+</body>
+</html>
